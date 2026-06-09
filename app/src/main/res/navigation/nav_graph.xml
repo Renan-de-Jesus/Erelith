@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/groupListFragment">
+
+    <!-- ── Groups ────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/groupListFragment"
+        android:name="com.rpgmanager.ui.groups.GroupListFragment"
+        android:label="@string/title_groups"
+        tools:layout="@layout/fragment_group_list">
+
+        <action
+            android:id="@+id/action_groupListFragment_to_groupFormFragment"
+            app:destination="@id/groupFormFragment" />
+        <action
+            android:id="@+id/action_groupListFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/groupFormFragment"
+        android:name="com.rpgmanager.ui.groups.GroupFormFragment"
+        android:label="@string/title_group_form"
+        tools:layout="@layout/fragment_group_form">
+        <argument
+            android:name="groupId"
+            app:argType="long"
+            android:defaultValue="0" />
+    </fragment>
+
+    <!-- ── Characters ────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.rpgmanager.ui.characters.CharacterListFragment"
+        android:label="{groupName}"
+        tools:layout="@layout/fragment_character_list">
+        <argument
+            android:name="groupId"
+            app:argType="long" />
+        <argument
+            android:name="groupName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_characterListFragment_to_characterFormFragment"
+            app:destination="@id/characterFormFragment" />
+        <action
+            android:id="@+id/action_characterListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterFormFragment"
+        android:name="com.rpgmanager.ui.characters.CharacterFormFragment"
+        android:label="@string/title_character_form"
+        tools:layout="@layout/fragment_character_form">
+        <argument
+            android:name="characterId"
+            app:argType="long"
+            android:defaultValue="0" />
+        <argument
+            android:name="groupId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.rpgmanager.ui.characters.CharacterDetailFragment"
+        android:label="@string/title_character_detail"
+        tools:layout="@layout/fragment_character_detail">
+        <argument
+            android:name="characterId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_characterDetailFragment_to_attributeFormFragment"
+            app:destination="@id/attributeFormFragment" />
+    </fragment>
+
+    <!-- ── Attributes ────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/attributeFormFragment"
+        android:name="com.rpgmanager.ui.attributes.AttributeFormFragment"
+        android:label="@string/title_attribute_form"
+        tools:layout="@layout/fragment_attribute_form">
+        <argument
+            android:name="attributeId"
+            app:argType="long"
+            android:defaultValue="0" />
+        <argument
+            android:name="characterId"
+            app:argType="long" />
+    </fragment>
+
+</navigation>

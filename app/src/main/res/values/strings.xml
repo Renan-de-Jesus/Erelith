@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">RPG Manager</string>
+    <string name="nav_header_subtitle">Organize suas aventuras</string>
+
+    <!-- Titles -->
+    <string name="title_groups">Grupos</string>
+    <string name="title_group_form">Grupo</string>
+    <string name="title_character_form">Personagem</string>
+    <string name="title_character_detail">Ficha do Personagem</string>
+    <string name="title_attribute_form">Atributo</string>
+
+    <!-- Tabs -->
+    <string name="tab_groups">Grupos</string>
+
+    <!-- Hints -->
+    <string name="hint_group_name">Nome do grupo *</string>
+    <string name="hint_master_name">Nome do Mestre *</string>
+    <string name="hint_description">Descrição da campanha</string>
+    <string name="hint_character_name">Nome do personagem *</string>
+    <string name="hint_player_name">Nome do jogador *</string>
+    <string name="hint_race">Raça *</string>
+    <string name="hint_class">Classe *</string>
+    <string name="hint_level">Nível</string>
+    <string name="hint_backstory">História do personagem</string>
+    <string name="hint_attr_name">Nome do atributo *</string>
+    <string name="hint_attr_note">Nota do Mestre (opcional)</string>
+    <string name="hint_number_value">Valor numérico *</string>
+    <string name="hint_text_value">Valor textual *</string>
+
+    <!-- Labels -->
+    <string name="master_label">Mestre: %s</string>
+    <string name="player_label">Jogador: %s</string>
+    <string name="class_race_label">%s • %s</string>
+    <string name="level_label">Nível %d</string>
+    <string name="label_active_group">Grupo ativo</string>
+    <string name="label_status">Status</string>
+    <string name="label_backstory">História</string>
+    <string name="label_attributes">Atributos</string>
+    <string name="label_attr_type">Tipo de atributo</string>
+    <string name="label_bool_value">Ativado</string>
+
+    <!-- Status -->
+    <string name="status_active">Ativo</string>
+    <string name="status_inactive">Inativo</string>
+    <string name="status_alive">Vivo</string>
+    <string name="status_dead">Morto</string>
+
+    <!-- Types -->
+    <string name="type_number">Número</string>
+    <string name="type_text">Texto</string>
+    <string name="type_boolean">Booleano</string>
+    <string name="bool_yes">Sim</string>
+    <string name="bool_no">Não</string>
+
+    <!-- Actions -->
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Excluir</string>
+    <string name="search">Buscar</string>
+    <string name="level_up">Level Up</string>
+    <string name="tap_to_change_image">Toque para alterar imagem</string>
+
+    <!-- FAB -->
+    <string name="fab_add_group">Novo grupo</string>
+    <string name="fab_add_character">Novo personagem</string>
+    <string name="fab_add_attribute">Novo atributo</string>
+
+    <!-- Empty states -->
+    <string name="empty_groups">Nenhum grupo ainda.\nCrie o primeiro com o botão +</string>
+    <string name="empty_characters">Nenhum personagem neste grupo ainda.</string>
+    <string name="empty_attributes">Nenhum atributo cadastrado.\nO Mestre pode adicionar com o botão +</string>
+
+    <!-- Toast messages -->
+    <string name="group_created">Grupo criado!</string>
+    <string name="group_updated">Grupo atualizado!</string>
+    <string name="character_created">Personagem criado!</string>
+    <string name="character_updated">Personagem atualizado!</string>
+    <string name="attribute_added">Atributo adicionado!</string>
+    <string name="attribute_updated">Atributo atualizado!</string>
+    <string name="attribute_deleted">Atributo removido.</string>
+
+    <!-- Delete dialogs -->
+    <string name="delete_group_title">Excluir grupo</string>
+    <string name="delete_group_message">Deseja excluir o grupo "%s"? Todos os personagens serão removidos.</string>
+    <string name="delete_character_title">Excluir personagem</string>
+    <string name="delete_character_message">Deseja excluir "%s"? Todos os atributos serão removidos.</string>
+    <string name="delete_attribute_title">Excluir atributo</string>
+    <string name="delete_attribute_message">Deseja excluir o atributo "%s"?</string>
+    <string name="delete_confirm">Excluir</string>
+
+    <!-- Errors -->
+    <string name="error_name_required">Nome é obrigatório</string>
+    <string name="error_master_required">Nome do Mestre é obrigatório</string>
+    <string name="error_player_required">Nome do jogador é obrigatório</string>
+    <string name="error_race_required">Raça é obrigatória</string>
+    <string name="error_class_required">Classe é obrigatória</string>
+    <string name="error_value_required">Valor é obrigatório</string>
+
+    <!-- Misc -->
+    <string name="no_backstory">Sem história definida.</string>
+    <string name="group_image_desc">Imagem do grupo</string>
+    <string name="character_image_desc">Imagem do personagem</string>
+
+    <!-- Search hints -->
+    <string name="search_groups_hint">Buscar grupos…</string>
+    <string name="search_characters_hint">Buscar personagens…</string>
+    <string name="search_attributes_hint">Buscar atributos…</string>
+</resources>
